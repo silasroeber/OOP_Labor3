@@ -1,19 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package labor3;
 
 /**
+ * Aufgabe 3
  *
- * @author silasroeber
+ * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
+ * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
 public class Labor3 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         Person p = new Person(1);
         p.print(new BildschirmAusgabe());
