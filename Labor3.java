@@ -15,7 +15,8 @@ public class Labor3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Person p = new Person(1);
+        p.print(new BildschirmAusgabe());
     }
     
 }
