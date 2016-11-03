@@ -4,11 +4,7 @@ package labor3;
 import java.util.Date;
 
 /**
-<<<<<<< HEAD
  * Aufgabe 3 a)
-=======
- * Aufgabe 3
->>>>>>> origin/master
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
@@ -23,21 +19,11 @@ class Datum {
     Datum() {
         // Nutzung von Date um einen default Konstruktor für "HEUTE" anzubieten
         Date date = new Date();
-<<<<<<< HEAD
         this.setJahr(date.getYear() + 1900);
         this.setMonat(date.getMonth() +1 );
         this.setTag(date.getDate());
     }
     
-    // prüft in settern ob Parameter zulässig sind, wenn nicht Fehlermeldung 
-    // -> keine neue Instanz von Datum
-=======
-        this.setJahr(date.getYear());
-        this.setMonat(date.getMonth());
-        this.setTag(date.getDay());
-    }
-
->>>>>>> origin/master
     Datum(final int tag, final int monat, final int jahr) throws IllegalArgumentException {
         this.setJahr(jahr);
         this.setMonat(monat);
@@ -89,16 +75,11 @@ class Datum {
     }
 
 // Ausgabefunktionen
-<<<<<<< HEAD
-    // Setzt Datums Attribute in String um DD.MM.YYYY
-=======
->>>>>>> origin/master
     @Override
     public String toString() {
         return String.format("%d.%d.%d", getTag(), getMonat(), getJahr());
     }
     
-<<<<<<< HEAD
 // weitere Funktionen
     //vergleicht datum zu Heute
     public int diffJahre(){
@@ -107,6 +88,4 @@ class Datum {
                 (this.getTag()+(this.getMonat()-1)*30+(this.getJahr()-1)*365))/365);
     }
     
-=======
->>>>>>> origin/master
 }
