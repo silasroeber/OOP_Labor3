@@ -1,11 +1,7 @@
 package labor3;
 
 /**
-<<<<<<< HEAD
  * Aufgabe 3 c)
-=======
- * Aufgabe 3
->>>>>>> origin/master
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
@@ -83,7 +79,7 @@ public class Fachbereich {
     }
     
     // weitere Funktionen
-    public void mitarbeiterHinzufügen(Person neuerDozent) {
+    public void mitarbeiterHinzufuegen(Person neuerDozent) {
         Person[] dozenten = this.getDozenten();
         Person[] tmp;
 

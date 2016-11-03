@@ -1,11 +1,7 @@
 package labor3;
 
 /**
-<<<<<<< HEAD
  * Aufgabe 3 b) a.
-=======
- * Aufgabe 3
->>>>>>> origin/master
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>

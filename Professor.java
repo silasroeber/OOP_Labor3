@@ -39,7 +39,7 @@ public class Professor extends Person {
             this.fachbereich.mitarbeiterEntfernen(this);
         }
         this.fachbereich = fachbereich;
-        this.fachbereich.mitarbeiterHinzufügen(this);  
+        this.fachbereich.mitarbeiterHinzufuegen(this);  
     }
 
 
