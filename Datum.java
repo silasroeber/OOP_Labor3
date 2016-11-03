@@ -4,10 +4,10 @@ package labor3;
 import java.util.Date;
 
 /**
- * Aufgabe 2 a)
+ * Aufgabe 3
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
- *          Silas Röber     <silas.roeber@student.fh-kiel.de>
+ * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
 class Datum {
 // Attribute
