@@ -3,23 +3,23 @@ package labor3;
 
 
 /**
- * Aufgabe 1
+ * Aufgabe 3
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
- *          Silas Röber     <silas.roeber@student.fh-kiel.de>
+ * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
 public class Person {
 
-    private final int personalNr;
-    private String anrede;
-    private String vorname;
-    private String nachname;
+    protected final int personenNr;
+    protected String anrede;
+    protected String vorname;
+    protected String nachname;
     
 //----------------------------------------------------------------------------------
    
-    public final int getPersonalNr() {return this.personalNr;}
+    public final int getPersonenNr() {return this.personenNr;}
     
-    private final void setAnrede (final String anrede) {this.anrede = anrede;}
+    public final void setAnrede (final String anrede) {this.anrede = anrede;}
     public final String getAnrede() {return this.anrede;}
     
     public final void setVorname (final String vorname) {this.vorname = vorname;}
@@ -67,7 +67,7 @@ public class Person {
 //und in die andere Richtung
     public Person(final int nummer)
     {
-        this.personalNr = nummer;
+        this.personenNr = nummer;
         this.setAnrede("Miss");
         this.setVorname("Daisy");
         this.setNachname("Duck");
@@ -102,12 +102,17 @@ public class Person {
     @Override
     public String toString() 
     {
-        return String.format("%s[%d, %s, %s, %s]", getClass().getName(), 
-             getPersonalNr(), getAnrede(), getVorname(), getNachname());
+        return String.format("%s[%d, %s, %s, %s]", getClass().getSimpleName(), 
+             getPersonenNr(), getAnrede(), getVorname(), getNachname());
     }
     
+    protected String ausgabeName() {
+        return String.format("%s %s", this.getVorname(), this.getNachname());
+    }
+    
+    
     public void print(Ausgabe printer) {
-        printer.print(this.getPersonalNr());
+        printer.print(this.toString());
     }
     
 }
