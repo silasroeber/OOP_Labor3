@@ -1,12 +1,15 @@
 package labor3;
 
 /**
- * Created by eike on 01.11.16.
+ * Aufgabe 3 b)
+ *
+ * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
+ * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
 public interface Ausgabe {
-
-    public void print(int i);
-    public void print(float f);
-    public void print(String s);
+    // evtl. auch ohne abstract
+    public abstract void print(int i);
+    public abstract void print(float f);
+    public abstract void print(String s);
 
 }
