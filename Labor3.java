@@ -9,7 +9,6 @@ package labor3;
  */
 public class Labor3 {
 
-
     public static void main(String[] args) {
         Person p = new Person(1);
         p.print(new BildschirmAusgabe());

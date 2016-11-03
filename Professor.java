@@ -1,18 +1,29 @@
 package labor3;
 
+<<<<<<< HEAD
 
 /**
  * Aufgabe 3 a) b.
+=======
+/**
+ * Aufgabe 3
+>>>>>>> origin/master
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
 public class Professor extends Person {
 
+<<<<<<< HEAD
     protected int personalNr;
     protected Datum eintrittsDatum;
     protected Fachbereich fachbereich = null;
     
+=======
+    private int personalNr;
+    private Datum eintrittsDatum;
+    private Fachbereich fachbereich;
+>>>>>>> origin/master
 
     public final int getPersonalNr() {
         return personalNr;
