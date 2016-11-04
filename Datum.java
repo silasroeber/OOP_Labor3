@@ -1,7 +1,7 @@
 
 package labor3;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Aufgabe 3 a)
@@ -17,13 +17,13 @@ public class Datum {
 
 // Konstruktoren
     Datum() {
-        // Nutzung von Date um einen default Konstruktor für "HEUTE" anzubieten
-        Date date = new Date();
-        this.setJahr(date.getYear() + 1900);
-        this.setMonat(date.getMonth() +1 );
-        this.setTag(date.getDate());
+        // Nutzung von Calendar um einen default Konstruktor für "HEUTE" anzubieten
+        Calendar cal = Calendar.getInstance();
+        this.setTag(cal.get(Calendar.DATE));
+        this.setMonat(cal.get(Calendar.MONTH));
+        this.setJahr(cal.get(Calendar.YEAR));
     }
-    
+
     Datum(final int tag, final int monat, final int jahr) throws IllegalArgumentException {
         this.setJahr(jahr);
         this.setMonat(monat);
@@ -87,5 +87,5 @@ public class Datum {
         return((heute.getTag()+(heute.getMonat()-1)*30+(heute.getJahr()-1)*365-
                 (this.getTag()+(this.getMonat()-1)*30+(this.getJahr()-1)*365))/365);
     }
-    
+
 }
