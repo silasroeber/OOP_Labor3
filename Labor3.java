@@ -23,7 +23,7 @@ public class Labor3 {
         lehrbe1.print(new BildschirmAusgabe());
         stud1.print(new BildschirmAusgabe());
         
-        fachber1.setDekan(lehrbe1); // da lehrbeautragter von prof erbt kann auch lehrbeauftragter 
+        fachber1.setDekan(prof1); // da lehrbeautragter von prof erbt kann auch lehrbeauftragter 
                                     // dekan werden :-(
         fachber1.print(new BildschirmAusgabe());
     }
