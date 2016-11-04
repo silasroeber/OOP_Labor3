@@ -20,7 +20,7 @@ public class Datum {
         // Nutzung von Calendar um einen default Konstruktor für "HEUTE" anzubieten
         Calendar cal = Calendar.getInstance();
         this.setTag(cal.get(Calendar.DATE));
-        this.setMonat(cal.get(Calendar.MONTH));
+        this.setMonat(cal.get(Calendar.MONTH) + 1);
         this.setJahr(cal.get(Calendar.YEAR));
     }
 
@@ -84,8 +84,11 @@ public class Datum {
     //vergleicht datum zu Heute
     public int diffJahre(){
         Datum heute = new Datum();
-        return((heute.getTag()+(heute.getMonat()-1)*30+(heute.getJahr()-1)*365-
-                (this.getTag()+(this.getMonat()-1)*30+(this.getJahr()-1)*365))/365);
+
+        int anzTage = this.getJahr() * 365 + (this.getMonat() - 1) * 30 + this.getTag();
+        int anzTageHeute = heute.getJahr() * 365 + (heute.getMonat() - 1) * 30 + heute.getTag();
+
+        return (anzTageHeute - anzTage) / 365;
     }
 
 }
