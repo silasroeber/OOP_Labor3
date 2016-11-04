@@ -9,7 +9,7 @@ import java.util.Date;
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
-class Datum {
+public class Datum {
 // Attribute
     private int tag;
     private int monat;

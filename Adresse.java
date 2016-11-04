@@ -6,7 +6,7 @@ package labor3;
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
-class Adresse {
+public class Adresse {
 // Attribute
     private final int plz;
     private final String ort;
