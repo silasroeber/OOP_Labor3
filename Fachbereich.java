@@ -8,14 +8,14 @@ package labor3;
  */
 public class Fachbereich {
 
-    
+// Attribute
     private String bezeichnung;
     private Person[] dozenten = null;
     protected Professor dekan = null;
     protected Professor proDekan = null;
     protected Adresse adresse = null;
     
-    // Getter&Setter
+// Getter&Setter
     public final String getBezeichnung() {
         return bezeichnung;
     }
@@ -62,7 +62,7 @@ public class Fachbereich {
         this.adresse = adresse;
     }
     
-    // Konstruktor
+// Konstruktoren
     public Fachbereich(String name,
                        Adresse adresse){
         this.setBezeichnung(name);
@@ -78,7 +78,7 @@ public class Fachbereich {
         this.setProDekan(proDekan);
     }
     
-    // weitere Funktionen
+// weitere Funktionen
     public void mitarbeiterHinzufuegen(Person neuerDozent) {
         Person[] dozenten = this.getDozenten();
         Person[] tmp;
@@ -115,7 +115,7 @@ public class Fachbereich {
         }
     }
     
-    // Ausgabefunktion
+// Ausgabefunktion
     @Override
     public String toString() {
         return this.getBezeichnung();

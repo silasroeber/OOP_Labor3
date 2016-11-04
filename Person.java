@@ -8,15 +8,16 @@ package labor3;
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
  */
-public class Person {
+public abstract class Person {
 
+// Attribute
     protected final int personenNr;
     protected String anrede;
     protected String vorname;
     protected String nachname;
     
 //----------------------------------------------------------------------------------
-   
+// Getter&Setter  
     public final int getPersonenNr() {return this.personenNr;}
     
     public final void setAnrede (final String anrede) {this.anrede = anrede;}
@@ -64,7 +65,7 @@ public class Person {
 
 //-------------------------------------------------------------------------------
 
-//und in die andere Richtung
+// Konstruktoren
     public Person(final int nummer)
     {
         this.personenNr = nummer;
@@ -97,8 +98,11 @@ public class Person {
         this(nummer,anrede,nachname);
         this.setVorname(vorname);
     }
-
     
+// weitere Funktionen
+    public abstract String statusBerechnen();
+
+// Ausgabefunktionen
     @Override
     public String toString() 
     {

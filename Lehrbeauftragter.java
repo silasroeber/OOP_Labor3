@@ -9,6 +9,7 @@ package labor3;
  */
 public class Lehrbeauftragter extends Professor{
 
+// Konstruktor
     public Lehrbeauftragter(int personalNr, 
                             Datum eintrittsDatum, 
                             Fachbereich fachbereich, 

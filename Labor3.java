@@ -10,8 +10,8 @@ package labor3;
 public class Labor3 {
 
     public static void main(String[] args) {
-        Person p = new Person(1);
-        p.print(new BildschirmAusgabe());
+        //Person p = new Person(1);
+        //p.print(new BildschirmAusgabe());
         
         Fachbereich fachber1 = new Fachbereich("I&E", new Adresse(24149, "Kiel", "Grenzstr.", 3));
         

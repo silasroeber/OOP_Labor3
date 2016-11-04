@@ -9,11 +9,12 @@ package labor3;
  */
 public class Professor extends Person {
 
+// Atribute
     protected int personalNr;
     protected Datum eintrittsDatum;
     protected Fachbereich fachbereich = null;
     
-
+// Getter&Setter
     public final int getPersonalNr() {
         return personalNr;
     }
@@ -42,7 +43,7 @@ public class Professor extends Person {
         this.fachbereich.mitarbeiterHinzufuegen(this);  
     }
 
-
+// Konstruktoren
     public Professor(int personalNr, 
                      Datum eintrittsDatum, 
                      Fachbereich fachbereich, 
@@ -56,6 +57,8 @@ public class Professor extends Person {
         this.setFachbereich(fachbereich);
     }
     
+// weitere Funktionen
+    @Override
     public String statusBerechnen() {
         int diff = this.getEintrittsDatum().diffJahre();
         if(diff < 5) {
@@ -68,6 +71,7 @@ public class Professor extends Person {
         }
     }
     
+// Ausgabefunktionen
     @Override
     public String toString() 
     {

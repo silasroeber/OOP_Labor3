@@ -8,10 +8,12 @@ package labor3;
  */
 public class Student extends Person {
 
+// Attribute
     private int matrikelNr;
     private int semester;
     private Fachbereich fachbereich;
 
+// Getter&Setter
     public final int getMatrikelNr() {
         return matrikelNr;
     }
@@ -36,8 +38,7 @@ public class Student extends Person {
         this.fachbereich = fachbereich;
     }
 
-    
-    
+// Konstruktoren
     public Student(int matrikelNr, 
                    int semester, 
                    Fachbereich fachbereich, 
@@ -51,6 +52,8 @@ public class Student extends Person {
         this.fachbereich = fachbereich;
     }
 
+// weitere Funktionen
+    @Override
     public String statusBerechnen() {
         int semster = this.getSemester();
         if(semester < 3) {
@@ -66,7 +69,8 @@ public class Student extends Person {
             }
         }
     }
-    
+
+// weitere funktionen
     @Override
     public String toString() 
     {
