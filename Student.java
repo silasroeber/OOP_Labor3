@@ -79,5 +79,4 @@ public class Student extends Person {
                 this.statusBerechnen());
     }
 
-
 }
