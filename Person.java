@@ -99,9 +99,6 @@ public abstract class Person {
         this.setVorname(vorname);
     }
     
-// weitere Funktionen
-    public abstract String statusBerechnen();
-
 // Ausgabefunktionen
     @Override
     public String toString() 

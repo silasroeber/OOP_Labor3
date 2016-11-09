@@ -53,8 +53,7 @@ public class Student extends Person {
     }
 
 // weitere Funktionen
-    @Override
-    public String statusBerechnen() {
+    private String statusBerechnen() {
         int semster = this.getSemester();
         if(semester < 3) {
             return "Neuling";

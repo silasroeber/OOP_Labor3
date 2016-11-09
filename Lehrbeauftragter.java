@@ -12,9 +12,9 @@ public class Lehrbeauftragter extends Person{
 
     
 // Atribute
-    protected int personalNr;
-    protected Datum eintrittsDatum;
-    protected Fachbereich fachbereich = null;
+    private int personalNr;
+    private Datum eintrittsDatum;
+    private Fachbereich fachbereich = null;
     
 // Getter&Setter
     public final int getPersonalNr() {
@@ -60,8 +60,7 @@ public class Lehrbeauftragter extends Person{
     }
     
 // weitere Funktionen
-    @Override
-    public String statusBerechnen() {
+    private String statusBerechnen() {
         int diff = this.getEintrittsDatum().diffJahre();
         if(diff < 5) {
             return "Innovationsträger";
