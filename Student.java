@@ -1,7 +1,7 @@
 package labor3;
 
 /**
- * Aufgabe 3 a) a.
+ * Aufgabe 3 a) a. + e)
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
@@ -53,6 +53,7 @@ public class Student extends Person {
     }
 
 // weitere Funktionen
+    // e) b.
     private String statusBerechnen() {
         int semster = this.getSemester();
         if(semester < 3) {

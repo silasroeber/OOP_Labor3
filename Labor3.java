@@ -19,15 +19,21 @@ public class Labor3 {
         Lehrbeauftragter lehrbe1 = new Lehrbeauftragter(33, new Datum(13, 05, 2014), fachber1, 3, "Herr Dipl. Ing.", "Hans", "Diestel");
         Student stud1 = new Student(915555, 16, fachber1, 4, "Herr", "Bummel", "Lant");
 
-        BildschirmAusgabe ausgabe = new BildschirmAusgabe();
-
-        prof1.print(ausgabe);
-        lehrbe1.print(ausgabe);
-        stud1.print(ausgabe);
+    // e)
+        BildschirmAusgabe bAusgabe = new BildschirmAusgabe();
+        prof1.print(bAusgabe);
+        lehrbe1.print(bAusgabe);
+        stud1.print(bAusgabe);
+        
+        // Alle Ausgaben ohne Funktion da keine Ausgabedetails implementiert
+        DruckerAusgabe dAusgabe = new DruckerAusgabe();
+        prof1.print(dAusgabe);
+        lehrbe1.print(dAusgabe);
+        stud1.print(dAusgabe);
         
         fachber1.setDekan(prof1);
 
-        fachber1.print(ausgabe);
+        fachber1.print(bAusgabe);
     }
   
     

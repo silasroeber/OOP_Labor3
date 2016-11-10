@@ -2,7 +2,7 @@
 package labor3;
 
 /**
- * Aufgabe 3 a) c.
+ * Aufgabe 3 a) c. + e)
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
@@ -60,6 +60,7 @@ public class Lehrbeauftragter extends Person{
     }
     
 // weitere Funktionen
+    // e) c.
     private String statusBerechnen() {
         int diff = this.getEintrittsDatum().diffJahre();
         if(diff < 5) {

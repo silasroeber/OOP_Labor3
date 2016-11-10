@@ -9,7 +9,11 @@ package labor3;
 public interface Ausgabe {
     
     public void print(int i);
+    public void print(long li);
     public void print(float f);
+    public void print(double lf);
+    public void print(boolean b);
     public void print(String s);
+    
 
 }

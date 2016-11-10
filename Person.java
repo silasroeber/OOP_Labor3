@@ -3,7 +3,7 @@ package labor3;
 
 
 /**
- * Aufgabe 3
+ * Aufgabe 3 e)
  *
  * @author  Eike Hoffmann   <eike.s.hoffmann@student.fh-kiel.de>
  * @author  Silas Röber     <silas.roeber@student.fh-kiel.de>
@@ -100,6 +100,7 @@ public abstract class Person {
     }
     
 // Ausgabefunktionen
+    // e) a. einfacher Klassenname wird zu Beginn ausgegeben
     @Override
     public String toString() 
     {
@@ -111,7 +112,8 @@ public abstract class Person {
         return String.format("%s %s", this.getVorname(), this.getNachname());
     }
     
-    
+    // Ausschließliche Implementierung einer String Ausgabe da vorhanden toString()
+    // Funktionen nutzbar; implementierung weiterer Ausgabefunktionen möglich
     public void print(Ausgabe printer) {
         printer.print(this.toString());
     }
