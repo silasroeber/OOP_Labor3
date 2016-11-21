@@ -85,9 +85,11 @@ public class Fachbereich {
 
         if(dozenten != null) {
             tmp = new Person[dozenten.length + 1];
+
             for(int i = 0; i < dozenten.length; ++i) {
                 tmp[i] = dozenten[i];
             }
+
             tmp[dozenten.length] = neuerDozent;
         } else {
             tmp = new Person[1];
@@ -103,7 +105,6 @@ public class Fachbereich {
 
         if(dozenten != null) {
             Person[] tmp = new Person[dozenten.length-1];
-
             int it = 0;
 
             for(Person p : dozenten) {

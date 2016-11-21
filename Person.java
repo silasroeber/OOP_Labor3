@@ -56,7 +56,7 @@ public abstract class Person {
                     final String vorname,
                     final String nachname)
     {
-        this.personalNr = nummer;
+        this.personenNr = nummer;
         this.setAnrede (anrede);
         this.setVorname (vorname);
         this.setNachname (nachname);
@@ -104,8 +104,8 @@ public abstract class Person {
     @Override
     public String toString() 
     {
-        return String.format("%s[%d, %s, %s, %s]", getClass().getSimpleName(), 
-             getPersonenNr(), getAnrede(), getVorname(), getNachname());
+        return String.format("%s[%d, %s, %s, %s]", this.getClass().getSimpleName(),
+                this.getPersonenNr(), this.getAnrede(), this.getVorname(), this.getNachname());
     }
     
     protected String ausgabeName() {

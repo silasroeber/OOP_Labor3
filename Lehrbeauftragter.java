@@ -65,12 +65,10 @@ public class Lehrbeauftragter extends Person{
         int diff = this.getEintrittsDatum().diffJahre();
         if(diff < 5) {
             return "Innovationsträger";
-        } else {
-            if(diff < 25) {
-                return "Etabliert";
-            }
-            return "Rentner in Spe";
+        } else if(diff < 25) {
+            return "Etabliert";
         }
+        return "Rentner in Spe";
     }
     
 // Ausgabefunktionen

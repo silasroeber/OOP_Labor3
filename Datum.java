@@ -60,16 +60,15 @@ public class Datum {
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                 if((1 > tag) || (tag > 31))
                     throw new IllegalArgumentException("Dieser Monat hat zwischen 1 und 31 Tagen");
-                else break;
+                break;
             case 4: case 6: case 9: case 11:
                 if((1 > tag) || (tag > 30))
                     throw new IllegalArgumentException("Dieser Monat hat zwischen 1 und 30 Tagen");
-                else break;
+                break;
             case 2:
                 if((1 > tag) || (tag > 28))
                     throw new IllegalArgumentException("Februar hat zwischen 1 und 28 Tagen");
-                else break;
-            default: break;
+                break;
         }
         this.tag = tag;
     }

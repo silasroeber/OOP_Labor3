@@ -58,16 +58,12 @@ public class Student extends Person {
         int semster = this.getSemester();
         if(semester < 3) {
             return "Neuling";
-        } else {
-            if(semster < 16) {
-                return "Etabliert";
-            } else {
-                if(semster == 16) {
-                    return "Bod'scher Spezialfall";
-                }
-                return "Bummelant";
-            }
+        } else if(semster < 16) {
+            return "Etabliert";
+        } else if(semster == 16) {
+            return "Bod'scher Spezialfall";
         }
+        return "Bummelant";
     }
 
 // weitere funktionen
