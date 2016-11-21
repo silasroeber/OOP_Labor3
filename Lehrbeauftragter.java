@@ -42,7 +42,9 @@ public class Lehrbeauftragter extends Person{
             this.fachbereich.mitarbeiterEntfernen(this);
         }
         this.fachbereich = fachbereich;
-        this.fachbereich.mitarbeiterHinzufuegen(this);  
+        if(this.fachbereich != null) {
+            this.fachbereich.mitarbeiterHinzufuegen(this);
+        }
     }
 
 // Konstruktoren
@@ -75,8 +77,10 @@ public class Lehrbeauftragter extends Person{
     @Override
     public String toString() 
     {
+        Fachbereich fachbereich = this.getFachbereich();
+
         return String.format("%s[%d, %s, %s]", super.toString(), 
-                this.getPersonalNr(), this.getFachbereich().toString(),
+                this.getPersonalNr(), fachbereich != null ? fachbereich.toString() : "-",
                 this.statusBerechnen());
     }
     

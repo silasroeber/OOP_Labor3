@@ -79,7 +79,7 @@ public class Fachbereich {
     }
     
 // weitere Funktionen
-    public void mitarbeiterHinzufuegen(Person neuerDozent) {
+    public void mitarbeiterHinzufuegen(Lehrbeauftragter neuerDozent) {
         Person[] dozenten = this.getDozenten();
         Person[] tmp;
 
@@ -100,11 +100,11 @@ public class Fachbereich {
     }
  
     
-    public void mitarbeiterEntfernen(Person alterDozent) {
+    public void mitarbeiterEntfernen(Lehrbeauftragter alterDozent) {
         Person[] dozenten = this.getDozenten();
 
-        if(dozenten != null) {
-            Person[] tmp = new Person[dozenten.length-1];
+        if(dozenten != null && dozenten.length > 0) {
+            Person[] tmp = new Person[dozenten.length - 1];
             int it = 0;
 
             for(Person p : dozenten) {
